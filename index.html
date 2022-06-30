@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="logo">Athu is Live</div>
+        <ul>
+            <img src="/cross-png-icon-1.jpg" alt="" onclick="hideNav()">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutMe</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">ContactMe</a></li>
+            <div class="dropdown-center">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    Search
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                  <li><form class="d-flex" id="search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form></li>
+                </ul>
+        </ul>
+        
+          </div>
+        
+        <div class="mainhamburger " onclick="showNav()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+
+    </nav>
+
+    <!-- main section -->
+        <div class="main_wallpaper container-fluid">
+            <span style="--i:1">W</span>
+            <span style="--i:2">E</span>
+            <span style="--i:3">L</span>
+            <span style="--i:4">C</span>
+            <span style="--i:5">O</span>
+            <span style="--i:6">M</span>
+            <span style="--i:7">E</span>
+        </div>
+        
+            
+         
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+
+        
+    </script>
+    <script>
+        function showNav() {
+            const navBar = document.querySelector(".navBar");
+            navBar.classList.toggle("activeNav");
+        }
+        function hideNav() {
+            const navBar = document.querySelector(".navBar");
+            navBar.classList.remove("activeNav");
+        }
+    
+    </script>
+</body>
+
+</html>

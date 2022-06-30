@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Diplomata+SC&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Macondo+Swash+Caps&family=Permanent+Marker&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+nav .logo {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-family: 'Macondo Swash Caps', cursive;
+    margin-left: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(37, 37, 37);
+    background: rgb(255, 255, 255);
+    height: 80px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+#search input {
+    font-size: 2rem;
+}
+
+#search input::placeholder {
+    font-size: 1.5rem;
+}
+
+#search button {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+nav ul li {
+    padding: 1rem 2rem;
+}
+
+.hamburger {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+}
+
+nav ul li a {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+nav ul img {
+    width: 30px;
+    align-self: flex-end;
+    margin: 30px;
+    color: #fff;
+    display: none;
+}
+
+.main_wallpaper {
+    background-image: url(/welcome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+.main_wallpaper span {
+    text-transform: uppercase;
+    /* background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    ); */
+    background-image: linear-gradient(
+      -225deg,
+      #ffe600 0%,
+      #00ff1e 29%,
+      #ff00d4 67%,
+      #ff4603 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Macondo Swash Caps', cursive;
+    -webkit-text-fill-color: transparent;
+    font-size: 10vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: waviy 1s infinite ,
+    textclip 2s linear infinite;
+    animation-delay: calc(.1s * var(--i));
+    display: inline-block;
+    
+  }
+
+nav ul li a:hover {
+    border-radius: 1rem;
+    margin: 0 1rem;
+    background: #5f5f5f;
+    letter-spacing: .2rem;
+    color: rgb(179, 233, 233);
+}
+
+.mainhamburger {
+    display: none;
+    margin: 0 30px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.dropdown-center button {
+    font-size: 2rem;
+}
+
+.dropdown-center ul li {
+    width: 200px;
+}
+
+.dropdown-center {
+    align-self: center;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    transition: all 0.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: textclip 2s linear infinite; */
+    animation: waviy 1s infinite;
+    display: inline-block;
+    animation-delay: calc(.1s * var(--i));
+    font-size: 10vw;
+    
+}
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@media screen and (max-width:940px) {
+    nav ul {
+        flex-direction: column;
+        background: #1b1b1bde;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 100px;
+        border-radius: 40px;
+        box-shadow: 1px 1px 10px black;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        z-index: 999;
+    }
+
+    .dropdown-center button {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a:hover {
+        border-radius: none;
+        background: none;
+        letter-spacing: .5rem;
+        color: rgb(179, 233, 233);
+    }
+
+    nav ul img {
+        display: block;
+    }
+
+    .mainhamburger {
+        display: block;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .activeNav ul {
+        left: 0;
+        opacity: 1;
+    }
+}
