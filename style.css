@@ -12,6 +12,9 @@
 html {
     font-size: 62.5%;
 }
+body{
+    overflow-x: hidden;
+}
 
 nav .logo {
     font-size: 3.3rem;
@@ -87,7 +90,7 @@ nav ul img {
 }
 
 .main_wallpaper {
-    background-image: url(/welcome.jpg);
+    background-image: url(/img/welcome.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,35 +229,124 @@ nav ul {
 #aboutMe div button {
     font-size: 2rem;
 }
-.profilepic{
+
+.profilepic {
     position: relative;
     max-width: 30rem;
     min-width: 10rem;
 }
+
 .profilepic img {
     width: 100%;
 }
-.profilepic ,.mainprofile{
+
+.profilepic, .mainprofile {
     min-width: 10rem;
     max-width: 30rem;
     transition: all 0.5s;
 }
-.mainprofile{
+
+.mainprofile {
     position: absolute;
     top: 0;
     left: 0;
 }
-.mainprofile{
+
+.mainprofile {
     width: 100%;
 }
-.mainprofile:hover{
+
+.mainprofile:hover {
     opacity: 0;
 }
 
+/* YOUTUBE */
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.youtubeB {
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.youtubeB span {
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.youtubeB:hover {
+    width: 20vw;
+}
+
+.youtubeB:hover .icon {
+    background: #e1306c;
+}
 
 
+.youtubeB span {
+    color: #FF0000;
+}
 
-    
+.youtubeB .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.youtubeB .icon i {
+    font-size: 50px;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.youtubeB:hover i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.youtubeV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.youtubeV iframe {
+    margin: 10px;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.youtubeV iframe:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 55px -12px rgba(0, 0, 0, 0.75);
+}
+.youtube h1{
+    font-size: 3rem;
+}
+.chanlelink{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @keyframes waviy {
@@ -276,6 +368,17 @@ nav ul {
 @media screen and (max-width: 1256px) {
     #tempalteweb {
         min-width: 45vw;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    .youtubeV iframe {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .youtubeV {
+        flex-direction: column;
     }
 }
 
@@ -305,7 +408,17 @@ nav ul {
     nav {
         z-index: 9999;
     }
-
+    .youtubeV iframe:hover{
+        transform: none;
+        box-shadow: none;
+    }
+    #aboutMe:hover{
+        box-shadow: none;
+    }
+    #tempalteweb:hover {
+        transform: none;
+        box-shadow: none;
+    }
     nav ul {
         flex-direction: column;
         /* From https://css.glass */
