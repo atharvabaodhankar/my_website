@@ -127,7 +127,6 @@ nav ul img {
     background-size: 200% auto;
     animation: shine 1s linear infinite;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Macondo Swash Caps', cursive;
