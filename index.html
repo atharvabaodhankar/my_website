@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Athu is Live</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/profile photo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/profile photo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#EpicNavbar" data-offset="0">
 
-    <nav class="navBar">
+    <nav id="EpicNavbar" class="navBar navbar-light bg-light">
         <div class="logo">Athu is Live</div>
         <ul>
             <img src="/img/cross-png-icon-1.jpg" alt="" onclick="hideNav()">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">AboutMe</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">ContactMe</a></li>
+            <li><a onclick="hideNav()" href="#home">Home</a></li>
+            <li><a onclick="hideNav()" href="#aboutmemain">AboutMe</a></li>
+            <li><a onclick="hideNav()" href="#videos">Videos</a></li>
+            <li><a onclick="hideNav()" href="#cotnactform">ContactMe</a></li>
 
         </ul>
 
@@ -37,14 +37,13 @@
     </nav>
 
     <!-- main section -->
-    <div class="main_wallpaper container-fluid">
-        <span style="--i:1">W</span>
-        <span style="--i:2">E</span>
-        <span style="--i:3">L</span>
-        <span style="--i:4">C</span>
-        <span style="--i:5">O</span>
-        <span style="--i:6">M</span>
-        <span style="--i:7">E</span>
+    <div id="home" class="main_wallpaper container-fluid">
+
+        <div class="introductionW"> Welcome to <span>Our Website</span></div>
+        <p>
+            This website is designed and developed by <span> Atharva </span></p>
+
+
     </div>
     <h1 id="templateH" class="text-center m-5">NEW WEBSITE TEMPLATES</h1>
 
@@ -113,38 +112,41 @@
     </div>
 
     <!-- ABOUTME -->
+    <div id="aboutmemain">
 
-    <h1 id="templateH" class="text-center m-5 " style="font-size:4rem ;">About Me</h1>
+        <h1 id="templateH" class="text-center m-5 " style="font-size:4rem ;">About Me</h1>
 
-    <div id="aboutMe" class="p-5 mb-4 bg-light rounded-3">
-        <div class="profilepic container-fluid">
-            <img class="profilefake" src="/img/profile-pic.png" alt="">
-            <div class="mainprofile">
-                <img src="/img/profile photo.ico" alt="">
+        <div id="aboutMe" class="p-5 mb-4 bg-light rounded-3">
+            <div class="profilepic container-fluid">
+                <img class="profilefake" src="/img/profile-pic.png" alt="">
+                <div class="mainprofile">
+                    <img src="/img/profile photo.ico" alt="">
+                </div>
             </div>
-        </div>
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Atharva Baodhankar</h1>
-            <p class="col-md-8 fs-4">Hello guys! <br> I am Atharva Aka OP ATHU, I am an Front-End Web-dev <br>
-                Contact me If you want to make your own <strong>WEBSITE</strong> <br>
-                Here are my social media accounts!</p>
-            <div class="hero">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Atharva Baodhankar</h1>
+                <p class="col-md-8 fs-4">Hello guys! <br> I am Atharva Aka OP ATHU, I am an Front-End Web-dev <br>
+                    Contact me If you want to make your own <strong>WEBSITE</strong> <br>
+                    Here are my social media accounts!</p>
+                <div class="hero">
 
-                <div class="social-links">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100069517304222"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/op_athu_/"><i class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="https://github.com/atharvabaodhankar"><i class="fab fa-github"></i></a>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100069517304222"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/op_athu_/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://github.com/atharvabaodhankar"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- YOUTUBE -->
-    <div class="youtube">
-        <h1 id="templateH" class="text-center m-5">Watch My Edits</h1>
+    <div id="videos" class="youtube">
+        <h1 id="templateH" class="text-center m-3">Watch My Edits</h1>
         <div class="chanlelink">
-       
+
             <div class="youtubeB">
                 <a target="_blank" href="https://www.youtube.com/channel/UCua9nrFAKR8fxgMmP048-nw">
                     <div style="color: red;" class="icon">
@@ -153,7 +155,7 @@
                     <span>YouTube</span>
                 </a>
             </div>
-            
+
         </div>
 
         <div class="youtubeV">
@@ -170,7 +172,40 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        
+    </div>
+
+    <!-- CONTACT US -->
+    <div id="cotnactform">
+        <div class="contact-form-wrapper d-flex justify-content-center">
+            <form method="POST" action="https://formspree.io/f/mgedjedv" class="contact-form">
+                <h5 class="title">Contact us</h5>
+                <p class="description">Feel free to contact us if you need any assistance, any help or another
+                    question.
+                </p>
+                <div>
+                    <input type="text" class="form-control rounded border-white mb-3 form-input" id="name"
+                        placeholder="Name" name="name" required>
+                </div>
+                <div>
+                    <input name="email" type="email" class="form-control rounded border-white mb-3 form-input"
+                        placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea name="message" id="message" class="form-control rounded border-white mb-3 form-text-area"
+                        rows="5" cols="30" placeholder="Message" required></textarea>
+                </div>
+                <div class="submit-button-wrapper">
+                    <input type="submit" name="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- COPYRIGHT  -->
+    <div class="copyright-text">
+        <p>Copyright &copy; 2022, All Right Reserved <a target="_blank"
+                href="https://github.com/atharvabaodhankar">Atharva Baodhankar</a></p>
+    </div>
+    </div>
 
 
 
@@ -179,10 +214,8 @@
 
 
 
-
-
-        <!-- TOASTER -->
-        <!-- <div class="toast auto" role="alert" aria-live="assertive" aria-atomic="true">
+    <!-- TOASTER -->
+    <div class="toast auto" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
             <img style="width: 6rem;" src="/profile photo.ico" class="rounded me-2" alt="...">
             <strong style="font-size: 1.5rem;" class="me-auto">Atharva</strong>
@@ -193,7 +226,7 @@
         <div class="toast-body" style="font-size: 2rem;">
             Hello, Nice to Meet You!
         </div>
-    </div> -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
             </script>
