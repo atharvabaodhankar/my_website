@@ -92,7 +92,7 @@ nav ul img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/Winter-Themed\ Version\ Of\ That\ One\ Wallpaper\ [7680x4320]\ Edit\ made\ by\ u_HyperActive1DUK\ \(2\).png);
+    background-image: url(/img/mainwallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -493,6 +493,9 @@ nav ul {
     .youtubeV {
         flex-direction: column;
     }
+    .main_wallpaper {
+        height: 27vh;
+    }
 }
 
 @media screen and (max-width: 707px) {
@@ -561,7 +564,7 @@ nav ul {
     }
 
     .main_wallpaper {
-        height: 40vh;
+        height: 35vh;
     }
 
     .youtubeV iframe:hover {
