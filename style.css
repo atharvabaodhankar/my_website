@@ -92,7 +92,7 @@ nav ul img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/mainwallpaper.jpg);
+    background-image: url(img/mainwallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
