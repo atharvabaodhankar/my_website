@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Diplomata+SC&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Macondo+Swash+Caps&family=Oswald:wght@700&family=Permanent+Marker&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Diplomata+SC&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Macondo+Swash+Caps&family=Permanent+Marker&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Diplomata+SC&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Macondo+Swash+Caps&family=Oswald:wght@700&family=Permanent+Marker&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Diplomata+SC&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Macondo+Swash+Caps&family=Oswald:wght@700&family=Permanent+Marker&family=Poppins:wght@300&family=Roboto:wght@700&family=Satisfy&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav .logo {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-family: 'Macondo Swash Caps', cursive;
+    margin-left: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(37, 37, 37);
+    background: rgb(255, 255, 255);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+
+#search input::placeholder {
+    font-size: 1.5rem;
+}
+
+#search button {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+nav ul li {
+    padding: 1rem 2rem;
+}
+
+#templateH {
+    font-family: 'Satisfy', cursive;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hamburger {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+}
+
+nav ul li a {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+nav ul img {
+    width: 30px;
+    align-self: flex-end;
+    margin: 30px;
+    color: #fff;
+    display: none;
+}
+
+.main_wallpaper {
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/mainwallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.introductionW {
+    color: #fff;
+    font-size: 4vw;
+}
+
+.main_wallpaper p {
+    color: #fff;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.main_wallpaper p span {
+    border-bottom: 3px solid rgb(251, 0, 255);
+    border-radius: 5px;
+    color: #d9ff03;
+    font-size: 5vw;
+    font-family: 'Macondo Swash Caps', cursive;
+}
+
+.introductionW span {
+    background: linear-gradient(to right, rgb(0, 255, 85) 20%, #7E22CE 40%, #FF0 60%, rgb(255, 0, 221) 80%);
+    background-size: 200% auto;
+    animation: shine 1s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Macondo Swash Caps', cursive;
+    font-weight: 700;
+    font-size: 7vw;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+nav ul li a:hover {
+    border-radius: 1rem;
+    margin: 0 1rem;
+    border: 2px solid #1b1b1b;
+    letter-spacing: .2rem;
+    color: rgb(6, 77, 255);
+    box-shadow: 1 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20.1px);
+    -webkit-backdrop-filter: blur(20.1px);
+}
+
+.mainhamburger {
+    display: none;
+    margin: 0 30px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.dropdown-center button {
+    font-size: 2rem;
+}
+
+.dropdown-center ul li {
+    width: 200px;
+}
+
+.dropdown-center {
+    align-self: center;
+}
+
+
+.website_templates {
+    margin: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tempalteweb {
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#tempalteweb:hover {
+    transform: scale(1.08);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
+#aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 55px -12px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#aboutMe:hover {
+    box-shadow: 0px 0px 55px -12px rgba(0, 0, 0, 0.75);
+}
+
+#aboutMe div h1 {
+    font-size: 5vw;
+}
+
+#aboutMe div p {
+    font-size: 3vw;
+}
+
+#aboutMe div button {
+    font-size: 2rem;
+}
+
+.profilepic {
+    position: relative;
+    max-width: 30rem;
+    min-width: 10rem;
+}
+
+.profilepic img {
+    width: 100%;
+}
+
+.profilepic, .mainprofile {
+    min-width: 10rem;
+    max-width: 30rem;
+    transition: all 0.5s;
+}
+
+.mainprofile {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainprofile {
+    width: 100%;
+}
+
+.mainprofile:hover {
+    opacity: 0;
+}
+
+/* YOUTUBE */
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.youtubeB {
+    float: left;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.youtubeB span {
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.youtubeB:hover {
+    width: 20vw;
+}
+
+.youtubeB:hover .icon {
+    background: #e1306c;
+}
+
+
+.youtubeB span {
+    color: #FF0000;
+}
+
+.youtubeB .icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.youtubeB .icon i {
+    font-size: 50px;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.youtubeB:hover i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.youtubeV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.youtubeV iframe {
+    margin: 10px;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.youtubeV iframe:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 55px -12px rgba(0, 0, 0, 0.75);
+}
+
+.youtube h1 {
+    font-size: 3rem;
+}
+
+.chanlelink {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTACT US  */
+#cotnactform {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-form-wrapper {
+    padding: 100px 20px;
+}
+
+.contact-form {
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+    border-color: #f33fb0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 15px;
+}
+
+.contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #f23292;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+    background-color: #d30069;
+}
+
+/* FOOTER  */
+.copyright-text {
+    background: #202020;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+
+.copyright-text p a {
+    color: #ff5e14;
+}
+
+
+
+@media screen and (max-width: 1256px) {
+    #tempalteweb {
+        min-width: 45vw;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    .youtubeV iframe {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .youtubeV {
+        flex-direction: column;
+    }
+    .main_wallpaper {
+        height: 27vh;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    #aboutMe {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form .title {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    #aboutMe div p {
+        text-align: center;
+    }
+
+    #aboutMe div h1 {
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 0 0;
+    }
+    .introductionW {
+        font-size: 4vw;
+    }
+    .introductionW span{
+        font-size: 8vw;
+    }
+    .main_wallpaper p {
+        font-size: 4vw;
+    }
+
+    .main_wallpaper p span {
+        font-size: 6vw;
+    }
+
+
+}
+
+@media screen and (max-width:760px) {
+    .introductionW {
+        font-size: 5vw;
+    }
+    .introductionW span{
+        font-size: 10vw;
+    }
+    .main_wallpaper p {
+        font-size: 5vw;
+    }
+
+    .main_wallpaper p span {
+        font-size: 7vw;
+    }
+    .main_wallpaper {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width:940px) {
+    nav {
+        z-index: 9999;
+    }
+
+    .main_wallpaper {
+        height: 35vh;
+    }
+
+    .youtubeV iframe:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    #aboutMe:hover {
+        box-shadow: none;
+    }
+
+    #tempalteweb:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        /* From https://css.glass */
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20.1px);
+        -webkit-backdrop-filter: blur(20.1px);
+        border: 1px solid rgba(0, 0, 0, 0.37);
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 100px;
+        border-radius: 40px;
+        box-shadow: 1px 1px 10px black;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        z-index: 999;
+    }
+
+
+    .dropdown-center button {
+        font-size: 2.5rem;
+    }
+
+    nav ul li a:hover {
+        border-radius: none;
+        background: none;
+        letter-spacing: .5rem;
+        color: rgb(0, 255, 255);
+        border: none;
+    }
+
+    nav ul img {
+        display: block;
+    }
+
+    .mainhamburger {
+        display: block;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .activeNav ul {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    #tempalteweb {
+        min-width: 80vw;
+    }
+}
+
+
+
+
+.hero {
+    background: #f1f9ff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social-links a .fab {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.social-links a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: #000;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social-links a:hover::after {
+    top: 0;
+}
+
+.social-links a:hover .fab {
+    color: #fff;
+}
+
+.social-links a:hover {
+    transform: translateY(-10px);
+}
